@@ -27,21 +27,172 @@ public class TelaSoma extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        lblSoma = new javax.swing.JLabel();
+        btnBotao = new javax.swing.JButton();
+        txtN1 = new javax.swing.JTextField();
+        txtN2 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        btnBotao2 = new javax.swing.JButton();
+        txtN5 = new javax.swing.JTextField();
+        txtN6 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        lblSoma2 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setText("+");
+
+        lblSoma.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        lblSoma.setText("0");
+
+        btnBotao.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnBotao.setText("=");
+        btnBotao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBotaoActionPerformed(evt);
+            }
+        });
+
+        txtN1.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        txtN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtN1ActionPerformed(evt);
+            }
+        });
+
+        txtN2.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        txtN2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtN2ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Century725 Cn BT", 1, 24)); // NOI18N
+        jLabel2.setText("CALCULADORA");
+
+        btnBotao2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnBotao2.setText("=");
+        btnBotao2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBotao2ActionPerformed(evt);
+            }
+        });
+
+        txtN5.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        txtN5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtN5ActionPerformed(evt);
+            }
+        });
+
+        txtN6.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        txtN6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtN6ActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel4.setText("-");
+
+        lblSoma2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        lblSoma2.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(106, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtN5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(txtN6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnBotao2)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblSoma2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(txtN1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel1)
+                                .addGap(12, 12, 12)
+                                .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnBotao)))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblSoma, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(92, 92, 92))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBotao)
+                    .addComponent(txtN2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtN1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblSoma))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblSoma2)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnBotao2)
+                        .addComponent(txtN6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtN5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtN1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtN1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtN1ActionPerformed
+
+    private void txtN2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtN2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtN2ActionPerformed
+
+    private void btnBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBotaoActionPerformed
+        /*somando instancio a variavel utilizo o interger parseInt e o getText 
+        *para identificar e pegar a variavel que sera armazenada no setText resultado Integer.toString
+        */
+        int n1 = Integer.parseInt(txtN1.getText());
+        int n2 = Integer.parseInt(txtN2.getText());
+        int  s =  n1+n2;
+        lblSoma.setText(Integer.toString(s));
+        
+    }//GEN-LAST:event_btnBotaoActionPerformed
+
+    private void btnBotao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBotao2ActionPerformed
+        // TODO add your handling code here:
+        
+        int n5 = Integer.parseInt(txtN5.getText());
+        int n6 = Integer.parseInt(txtN6.getText());
+        int  s = n5-n6;
+        lblSoma2.setText(Integer.toString(s));
+    }//GEN-LAST:event_btnBotao2ActionPerformed
+
+    private void txtN5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtN5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtN5ActionPerformed
+
+    private void txtN6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtN6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtN6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +230,16 @@ public class TelaSoma extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBotao;
+    private javax.swing.JButton btnBotao2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lblSoma;
+    private javax.swing.JLabel lblSoma2;
+    private javax.swing.JTextField txtN1;
+    private javax.swing.JTextField txtN2;
+    private javax.swing.JTextField txtN5;
+    private javax.swing.JTextField txtN6;
     // End of variables declaration//GEN-END:variables
 }
